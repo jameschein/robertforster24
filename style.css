@@ -83,7 +83,7 @@ body {
 
 .warm-nights .banner__text {
   background-color: var(--clr-nectarine-500);
-  border-inline: 1rem solid var(--clr-neutral-100);
+  border-inline: 0.33rem solid var(--clr-neutral-100);
   display: grid;
   gap: 0.5rem;
   position: relative;
