@@ -83,6 +83,10 @@ body {
   max-height: 100vh;
 }
 
+.warm-nights {
+  width: 100vw;
+}
+
 .warm-nights .banner__text {
   background-color: var(--clr-nectarine-500);
   border-inline: 0.33rem solid var(--clr-neutral-100);
@@ -134,8 +138,8 @@ body {
 
 .warm-nights .banner__headergroup {
   --logotype-width: 100vw;
-  height: calc(var(--logotype-width) / 2.6);
-  background: url(images/warm-nights-logotype.webp) no-repeat -15px 58%;
+  height: calc(var(--logotype-width) / 2.5);
+  background: url(images/warm-nights-logotype.webp) no-repeat -15px 50%;
   background-size: 100%;
 }
 
