@@ -113,7 +113,7 @@ body {
   content: "–";
   display: block;
   padding-top: 0.5rem;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-med);
   line-height: 1;
 }
 
