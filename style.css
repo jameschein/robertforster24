@@ -118,8 +118,9 @@ body {
 .warm-nights .banner__foot {
   background-color: var(--clr-neutral-100);
   color: var(--clr-nectarine-500);
-  margin-top: 2rem;
+  margin-top: 3rem;
   line-height: 3;
+  font-size: 1.5rem;
 }
 
 .warm-nights .banner__headergroup {
@@ -144,7 +145,7 @@ body {
   display: inline-block;
   width: 90%;
   position: absolute;
-  bottom: 3.5rem;
+  bottom: 4.5rem;
   left: 50%;
   margin-left: -45%;
   font-family: Futura;
