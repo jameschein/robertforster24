@@ -1,5 +1,6 @@
 :root {
   --clr-nectarine-500: hsl(24, 100%, 51%);
+  --clr-nectarine-700: hsl(24, 99%, 37%);
   --clr-aubergine-800: hsl(0, 97%, 14%);
   --clr-wn-cta-900: hsl(273, 38%, 27%);
   --clr-wn-cta-700: hsl(254, 46%, 46%);
@@ -117,7 +118,7 @@ body {
 
 .warm-nights .banner__foot {
   background-color: var(--clr-neutral-100);
-  color: var(--clr-nectarine-500);
+  color: var(--clr-nectarine-700);
   margin-top: 3rem;
   line-height: 3;
   font-size: 1.33rem;
