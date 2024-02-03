@@ -1,0 +1,173 @@
+/* font-family: "futura-pt-condensed", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "futura-pt-condensed", sans-serif;
+font-weight: 700;
+font-style: normal; */
+
+:root {
+  --clr-nectarine-500: hsl(24, 100%, 51%);
+  --clr-aubergine-800: hsl(0, 97%, 14%);
+  --clr-wn-cta-900: hsl(273, 38%, 27%);
+  --clr-wn-cta-700: hsl(254, 46%, 46%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  --ff-base: "futura-pt-condensed", sans-serif;
+
+  --fw-bold: 700;
+  --fw-normal: 400;
+}
+
+/* JOSH COMEAU RESET - https://www.joshwcomeau.com/css/custom-css-reset/
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* UTILITY CLASSES */
+
+body {
+  margin: 0.75rem;
+  font-family: "futura-pt-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  background-color: var(--clr-neutral-100);
+  text-align: center;
+  max-height: 100vh;
+}
+
+.warm-nights .banner__text {
+  background-color: var(--clr-nectarine-500);
+  border-inline: 1rem solid var(--clr-neutral-100);
+  display: grid;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.warm-nights {
+  color: var(--clr-neutral-100);
+}
+
+.warm-nights .banner__top-tail {
+  --content-padding: 0.75rem;
+  letter-spacing: 3px;
+  font-size: 1.125rem;
+  padding: var(--content-padding);
+}
+
+.warm-nights .banner__head {
+  font-size: 1.25rem;
+  font-weight: var(--fw-normal);
+  letter-spacing: 2px;
+}
+
+.warm-nights .banner__head::after {
+  content: "–";
+  display: block;
+  padding-top: 0.5rem;
+  font-weight: var(--fw-bold);
+  line-height: 1;
+}
+
+.warm-nights .banner__foot {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-nectarine-500);
+  margin-top: 2rem;
+  line-height: 3;
+}
+
+.warm-nights .banner__headergroup {
+  --logotype-width: 100vw;
+  height: calc(var(--logotype-width) / 2.6);
+  background: url(images/warm-nights-logotype.webp) no-repeat -15px 58%;
+  background-size: 100%;
+}
+
+.banner__headergroup span {
+  display: block;
+  text-indent: 2800px;
+  overflow: hidden;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.banner__cta {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-wn-cta-900);
+  padding: 1rem;
+  display: inline-block;
+  width: 90%;
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  margin-left: -45%;
+  font-family: Futura;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 1.125rem;
+  transition: background-color 500ms;
+}
+
+.banner__cta:is(:hover, :focus) {
+  background-color: var(--clr-wn-cta-700);
+  transition: background-color 500ms;
+}
+
+.banner__formats {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding: 0 0.125rem 0 1rem;
+}
