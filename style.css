@@ -89,6 +89,7 @@ body {
   display: grid;
   gap: 0.5rem;
   position: relative;
+  align-items: center;
 }
 
 .warm-nights {
@@ -110,11 +111,16 @@ body {
 }
 
 .warm-nights .banner__head::after {
-  content: "–";
+  content: "";
+  border-bottom: solid white 2px;
+  height: 20px;
+  width: 20px;
   display: block;
+  justify-content: center;
   padding-top: 0.5rem;
   font-weight: var(--fw-med);
-  line-height: 1;
+  line-height: 1.125;
+  margin: auto;
 }
 
 .warm-nights .banner__foot {
