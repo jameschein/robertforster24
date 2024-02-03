@@ -104,7 +104,7 @@ body {
 
 .warm-nights .banner__head {
   font-size: 1.25rem;
-  font-weight: var(--fw-normal);
+  font-weight: var(--fw-med);
   line-height: 1.125;
   letter-spacing: 2px;
 }
