@@ -9,6 +9,7 @@
   --ff-base: "futura-pt-condensed", sans-serif;
 
   --fw-bold: 700;
+  --fw-med: 500;
   --fw-normal: 400;
 }
 
@@ -122,6 +123,7 @@ body {
   margin-top: 3rem;
   line-height: 3;
   font-size: 1.33rem;
+  font-weight: var(--fw-med);
 }
 
 .warm-nights .banner__headergroup {
