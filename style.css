@@ -33,7 +33,7 @@
     4. Improve text rendering
   */
 body {
-  line-height: 1.5;
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
 /*
@@ -103,12 +103,11 @@ body {
 .warm-nights .banner__top-tail {
   --content-padding: 0.75rem;
   letter-spacing: 3px;
-  font-size: 1.125rem;
+  font-size: 5vw;
   padding: var(--content-padding);
 }
 
 .warm-nights .banner__head {
-  font-size: 1.25rem;
   font-weight: var(--fw-med);
   line-height: 1.125;
   letter-spacing: 2px;
@@ -130,9 +129,8 @@ body {
 .warm-nights .banner__foot {
   background-color: var(--clr-neutral-100);
   color: var(--clr-nectarine-500);
-  margin-top: 3rem;
-  line-height: 3;
-  font-size: 1.35rem;
+  line-height: 1;
+  padding-top: 2rem;
   font-weight: var(--fw-med);
 }
 
@@ -154,18 +152,16 @@ body {
 .banner__cta {
   color: var(--clr-neutral-100);
   background-color: var(--clr-wn-cta-900);
-  padding: 1rem;
+  padding: 2vh;
   display: inline-block;
   width: 90%;
-  position: absolute;
-  bottom: 4.5rem;
-  left: 50%;
-  margin-left: -45%;
   font-family: Futura;
   letter-spacing: 1px;
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 5vw;
   transition: background-color 500ms;
+  position: relative;
+  top: 3vh;
 }
 
 .banner__cta:is(:hover, :focus) {
@@ -174,7 +170,7 @@ body {
 }
 
 .banner__formats {
-  font-size: 1.5rem;
+  font-size: 6vw;
   letter-spacing: 2px;
   padding: 0 1rem;
 }
