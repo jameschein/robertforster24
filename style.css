@@ -203,6 +203,7 @@ body {
   .banner__text {
     grid-area: left;
     border-right: none;
+    gap: 0.25;
   }
 
   .warm-nights .banner__text {
