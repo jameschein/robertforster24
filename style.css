@@ -214,11 +214,11 @@ body {
     background-color: transparent;
     grid-area: right;
     position: relative;
-    left: -0.5rem;
+    left: -0.25rem;
   }
 
   .banner__lp-image img {
-    transform: perspective(100px) rotateY(-0.75deg);
+    transform: perspective(100px) rotateY(-1deg);
   }
 
   .warm-nights .banner__top-tail {
