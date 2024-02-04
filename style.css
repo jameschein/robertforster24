@@ -1,5 +1,5 @@
 :root {
-  --clr-nectarine-500: hsl(24, 100%, 51%);
+  --clr-nectarine-500: #ff6905;
   --clr-nectarine-700: hsl(24, 99%, 37%);
   --clr-aubergine-800: hsl(0, 97%, 14%);
   --clr-wn-cta-900: hsl(273, 38%, 27%);
@@ -90,9 +90,16 @@ body {
 
 .warm-nights .banner__text {
   background-color: var(--clr-nectarine-500);
+  background: linear-gradient(
+    180deg,
+    var(--clr-nectarine-500) 0%,
+    var(--clr-nectarine-500) 78%,
+    rgba(255, 255, 255, 1) 78%,
+    rgba(255, 255, 255, 1) 100%
+  );
   border-inline: 0.33rem solid var(--clr-neutral-100);
   display: grid;
-  gap: 0.25rem;
+  gap: 0.5rem;
   position: relative;
   align-items: center;
 }
@@ -166,10 +173,7 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 5vw;
-
   transition: background-color 500ms;
-  position: relative;
-  top: 2vh;
 }
 
 .banner__cta:is(:hover, :focus) {
@@ -178,10 +182,9 @@ body {
 }
 
 .banner__formats {
-  font-size: 7vw;
-
+  font-size: 6vw;
   letter-spacing: 2px;
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 2rem;
 }
 
 .btn-parent {
