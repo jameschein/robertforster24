@@ -192,7 +192,7 @@ body {
     gap: 0;
   }
 
-  .banner__text {
+  .warm-nights .banner__text {
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
@@ -204,7 +204,6 @@ body {
     );
     grid-area: left;
     border-right: none;
-    gap: 0.25;
   }
 
   .warm-nights .banner__text {
