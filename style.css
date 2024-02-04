@@ -209,7 +209,7 @@ body {
   }
 }
 
-@media screen and (min-width: 767px) and (orientation: portrait) {
+@media screen and (min-width: 693px) and (orientation: portrait) {
   .warm-nights .banner__top-tail {
     font-size: 2vh;
   }
