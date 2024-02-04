@@ -215,7 +215,7 @@ body {
   }
 
   .warm-nights .banner__headergroup {
-    height: calc(var(--logotype-width) / 5.25);
+    height: calc(var(--logotype-width) / 5.5);
     background: url(images/warm-nights-logotype.webp) no-repeat 100% 50%;
     background-size: 75%;
     background-position: 33% 50%;
