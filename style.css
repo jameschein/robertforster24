@@ -204,6 +204,6 @@ body {
   }
 
   .warm-nights .banner__foot {
-    padding-top: 0.75rem;
+    padding-block: 0.75rem;
   }
 }
