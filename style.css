@@ -214,8 +214,14 @@ body {
     font-size: 2vh;
   }
 
+  .warm-nights .banner__headergroup {
+    height: calc(var(--logotype-width) / 6);
+    background-size: 86%;
+    background-position-x: 0.75vw;
+  }
+
   .banner__cta {
-    padding: 2vh;
+    padding: 1.75vh;
     font-size: 2vh;
     top: 1.75vh;
   }
@@ -225,7 +231,7 @@ body {
   }
 
   .warm-nights .banner__foot {
-    padding-block: 2vh 4vh;
+    padding-block: 2vh 2vh;
     font-size: 2vh;
   }
 }
