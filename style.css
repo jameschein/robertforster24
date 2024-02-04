@@ -93,9 +93,11 @@ body {
   background-color: var(--clr-nectarine-500);
   background: linear-gradient(
     180deg,
-    var(--clr-nectarine-500) 0%,
-    var(--clr-nectarine-500) 78%,
-    rgba(255, 255, 255, 1) 78%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 6%,
+    rgba(255, 105, 5, 1) 6%,
+    rgba(255, 105, 5, 1) 81%,
+    rgba(255, 255, 255, 1) 81%,
     rgba(255, 255, 255, 1) 100%
   );
   border-inline: 0.33rem solid var(--clr-neutral-100);
