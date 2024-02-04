@@ -243,7 +243,11 @@ body {
   }
 
   .banner__formats {
-    font-size: calc(1rem + 0.25vw);
+    font-size: calc(0.75rem + 0.25vw);
+    position: relative;
+    margin-top: -20px;
+    margin-left: 40%;
+    padding-bottom: 1.5vw;
   }
 
   .warm-nights .banner__head span {
@@ -292,10 +296,6 @@ body {
 
   .banner__formats {
     font-size: calc(0.75rem + 0.75vw);
-    position: relative;
-    margin-top: -30px;
-    margin-left: 40%;
-    padding-bottom: 1.5vw;
   }
 
   .warm-nights .banner__foot {
