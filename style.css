@@ -131,10 +131,10 @@ body {
   background-color: var(--clr-neutral-100);
   color: var(--clr-nectarine-500);
   line-height: 1;
-  padding-top: 1.75rem;
+  padding-block: 0.75rem 1.5rem;
   font-weight: var(--fw-med);
   letter-spacing: 2px;
-  font-size: 1.75vh;
+  font-size: 3vh;
 }
 
 .warm-nights .banner__headergroup {
