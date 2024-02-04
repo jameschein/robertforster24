@@ -304,6 +304,10 @@ body {
 
 /* iPAD LANDSCAPE */
 @media screen and (min-width: 1023px) {
+  .banner__lp-image {
+    left: -0.66rem;
+  }
+
   .banner {
     grid-template-columns: 60% 40%;
   }
