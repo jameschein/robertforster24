@@ -254,8 +254,22 @@ body {
 }
 
 @media screen and (min-width: 568px) and (orientation: portrait) {
+  .warm-nights .banner__text {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      var(--clr-nectarine-500) 6%,
+      var(--clr-nectarine-500) 6%,
+      var(--clr-nectarine-500) 75%,
+      rgba(255, 255, 255, 1) 75%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    grid-area: left;
+    border-right: none;
+  }
+
   .warm-nights .banner__top-tail {
-    font-size: calc(0.75rem + 0.25vw);
+    font-size: calc(0.75rem + 0.75vw);
   }
 
   .warm-nights .banner__headergroup {
@@ -264,14 +278,16 @@ body {
 
   .banner__cta {
     padding: 1.75vw;
-    font-size: 1.75vw;
+    font-size: calc(0.75rem + 0.75vw);
+    width: 80%;
   }
 
   .banner__formats {
-    font-size: 2.25vw;
+    font-size: calc(0.75rem + 0.75vw);
     position: relative;
     margin-top: -30px;
     margin-left: 40%;
+    padding-bottom: 1.5vw;
   }
 
   .warm-nights .banner__foot {
