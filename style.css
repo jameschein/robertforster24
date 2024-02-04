@@ -212,6 +212,8 @@ body {
 
   .banner__lp-image {
     grid-area: right;
+    transform: perspective(400px) rotateY(-5deg);
+    margin-left: -10px;
   }
 
   .warm-nights .banner__top-tail {
