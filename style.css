@@ -297,29 +297,35 @@ body {
 
 /* iPAD LANDSCAPE */
 @media screen and (min-width: 1023px) {
+  .banner {
+    grid-template-columns: 60% 40%;
+  }
+
   .warm-nights .banner__top-tail {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1rem + 0.5vw);
     letter-spacing: 3px;
   }
 
   .warm-nights .banner__headergroup {
-    height: calc(var(--logotype-width) / 4.5);
+    height: calc(var(--logotype-width) / 5);
   }
 
   .banner__cta {
     padding: 2vh 2vw;
     font-size: calc(1rem + 1vw);
+    width: 72%;
   }
 
   .warm-nights .banner__foot {
-    padding-block: 2.25vh 3vw;
+    padding-block: 1vh 3vw;
+    font-size: calc(1rem + 1vw);
   }
 
   .banner__formats {
     font-size: calc(1rem + 1vw);
     position: relative;
-    margin-top: -50px;
+    margin-top: -40px;
     margin-left: 40%;
-    padding-bottom: 1.5vw;
+    padding-bottom: 1vw;
   }
 }
