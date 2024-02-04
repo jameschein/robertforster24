@@ -192,7 +192,7 @@ body {
   .banner__cta {
     padding: 5vh;
     font-size: small;
-    top: 5vh;
+    top: 4.5vh;
   }
 
   .banner__formats {
@@ -204,7 +204,7 @@ body {
   }
 
   .warm-nights .banner__foot {
-    padding-block: 1em 2em;
+    padding-block: 3vh;
     font-size: 4vh;
   }
 }
