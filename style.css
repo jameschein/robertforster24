@@ -7,6 +7,7 @@
   --clr-neutral-100: hsl(0, 0%, 100%);
 
   --ff-base: "futura-pt-condensed", sans-serif;
+  --ff-btn: "Futura", sans-serif;
 
   --fw-bold: 700;
   --fw-med: 500;
@@ -155,7 +156,7 @@ body {
   padding: 2vh;
   display: inline-block;
   width: 90%;
-  font-family: Futura;
+  font-family: var(--ff-btn);
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 5vw;
@@ -235,7 +236,7 @@ body {
   }
 
   .warm-nights .banner__foot {
-    padding-block: 3vh;
+    padding-block: 2.25vh 3vh;
     font-size: 2vh;
   }
 }
