@@ -211,9 +211,15 @@ body {
   }
 
   .banner__lp-image {
+    background-color: transparent;
     grid-area: right;
+
+    position: relative;
+    left: -10px;
+  }
+
+  .banner__lp-image img {
     transform: perspective(400px) rotateY(-5deg);
-    margin-left: -10px;
   }
 
   .warm-nights .banner__top-tail {
