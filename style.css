@@ -304,6 +304,9 @@ body {
 
 /* iPAD LANDSCAPE */
 @media screen and (min-width: 1023px) {
+  .banner {
+    overflow: hidden;
+  }
   .banner__lp-image {
     left: -0.66rem;
   }
