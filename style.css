@@ -90,7 +90,6 @@ body {
 }
 
 .warm-nights .banner__text {
-  background-color: var(--clr-nectarine-500);
   background: linear-gradient(
     180deg,
     var(--clr-nectarine-500) 0%,
