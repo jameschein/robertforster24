@@ -84,8 +84,9 @@ body {
   max-height: 100vh;
 }
 
-.warm-nights {
+.warm-nights.banner {
   width: 100%;
+  color: var(--clr-neutral-100);
 }
 
 .warm-nights .banner__text {
@@ -104,14 +105,10 @@ body {
   align-items: center;
 }
 
-.warm-nights {
-  color: var(--clr-neutral-100);
-}
-
 .warm-nights .banner__top-tail {
   --content-padding: 0.75rem;
   letter-spacing: 3px;
-  font-size: 5vw;
+  font-size: calc(1rem + 0.5vw);
   padding: var(--content-padding);
 }
 
@@ -119,6 +116,10 @@ body {
   font-weight: var(--fw-med);
   line-height: 1.125;
   letter-spacing: 2px;
+}
+
+.warm-nights .banner__head span {
+  display: block;
 }
 
 .warm-nights .banner__head::after {
@@ -134,20 +135,6 @@ body {
   margin: auto;
 }
 
-.warm-nights .banner__foot {
-  background-color: var(--clr-neutral-100);
-  color: var(--clr-nectarine-500);
-  line-height: 1;
-  padding-block: 0.75rem 1.5rem;
-  font-weight: var(--fw-med);
-  letter-spacing: 2px;
-  font-size: calc(1rem + 1vw);
-}
-
-.warm-nights .banner__head span {
-  display: block;
-}
-
 .warm-nights .banner__headergroup {
   --logotype-width: 100vw;
   height: calc(var(--logotype-width) / 2.5);
@@ -161,6 +148,13 @@ body {
   overflow: hidden;
   width: 1px;
   white-space: nowrap;
+}
+
+.banner__formats {
+  font-size: 6vw;
+  letter-spacing: 2px;
+  padding: 0.25rem 2rem;
+  font-weight: var(--fw-med);
 }
 
 .banner__cta {
@@ -181,22 +175,20 @@ body {
   transition: background-color 500ms;
 }
 
-.banner__formats {
-  font-size: 6vw;
-  letter-spacing: 2px;
-  padding: 0.25rem 2rem;
+.warm-nights .banner__foot {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-nectarine-500);
+  line-height: 1;
+  padding-block: 0.75rem 1.5rem;
   font-weight: var(--fw-med);
-}
-
-.btn-parent {
-  position: relative;
+  letter-spacing: 2px;
 }
 
 /* TWO COLUMN */
 @media screen and (min-width: 568px) {
   .banner {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
     grid-template-areas: "left right";
     gap: 0;
   }
@@ -215,27 +207,28 @@ body {
     grid-area: right;
   }
 
-  .warm-nights .banner__headergroup {
-    height: calc(var(--logotype-width) / 5.5);
-    background: url(images/warm-nights-logotype.webp) no-repeat 100% 50%;
-    background-size: 75%;
-    background-position: 33% 50%;
-  }
-
-  .banner__cta {
-    padding: 5vh 5vw;
-    font-size: 4vw;
-  }
-
-  .banner__formats {
-    font-size: 5vw;
-  }
-
   .warm-nights .banner__top-tail {
     background-color: white;
     color: var(--clr-nectarine-500);
-    font-size: 4.5vw;
-    padding-block: 1vh 0.5vw;
+    padding-block: 1.75vw;
+    font-size: calc(0.5rem + 1vw);
+  }
+
+  .warm-nights .banner__headergroup {
+    height: calc(var(--logotype-width) / 6);
+    background: url(images/warm-nights-logotype.webp) no-repeat 100% 50%;
+    background-size: 75%;
+    background-position: 33% 50%;
+    margin-top: 1vw;
+  }
+
+  .banner__cta {
+    padding: 2vw;
+    font-size: calc(0.75rem + 0.125vw);
+  }
+
+  .banner__formats {
+    font-size: calc(1rem + 0.25vw);
   }
 
   .warm-nights .banner__head span {
@@ -249,14 +242,13 @@ body {
   }
 
   .warm-nights .banner__foot {
-    font-size: 4.25vw;
-    padding-block: 1vh 0.5vw;
+    padding-block: 0.25vw;
   }
 }
 
 @media screen and (min-width: 568px) and (orientation: portrait) {
   .warm-nights .banner__top-tail {
-    font-size: 1.75vw;
+    font-size: calc(0.75rem + 0.25vw);
   }
 
   .warm-nights .banner__headergroup {
