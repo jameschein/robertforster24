@@ -250,6 +250,7 @@ body {
 
   .warm-nights .banner__foot {
     font-size: 4.25vh;
+    padding-block: 1vh 0.5vh;
   }
 }
 
