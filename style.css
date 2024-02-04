@@ -159,6 +159,7 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 5vw;
+
   transition: background-color 500ms;
   position: relative;
   top: 3vh;
@@ -171,6 +172,38 @@ body {
 
 .banner__formats {
   font-size: 6vw;
+
   letter-spacing: 2px;
   padding: 0 1rem;
+}
+
+@media screen and (min-width: 568px) {
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .warm-nights .banner__headergroup {
+    height: calc(var(--logotype-width) / 5.75);
+    background-size: 90%;
+    background-position-x: 0.75vw;
+  }
+
+  .banner__cta {
+    padding: 4vh;
+    font-size: small;
+    top: 1em;
+  }
+
+  .banner__formats {
+    font-size: medium;
+  }
+
+  .warm-nights .banner__top-tail {
+    font-size: small;
+  }
+
+  .warm-nights .banner__foot {
+    padding-top: 0.75rem;
+  }
 }
