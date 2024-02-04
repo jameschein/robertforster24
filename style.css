@@ -92,7 +92,7 @@ body {
   background-color: var(--clr-nectarine-500);
   border-inline: 0.33rem solid var(--clr-neutral-100);
   display: grid;
-  gap: 0.5rem;
+  gap: 0.25rem;
   position: relative;
   align-items: center;
 }
@@ -192,11 +192,22 @@ body {
 @media screen and (min-width: 568px) {
   .banner {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "left right";
+    gap: 0;
+  }
+
+  .banner__text {
+    grid-area: left;
+    border-right: none;
   }
 
   .warm-nights .banner__text {
     border: none;
+  }
+
+  .banner__lp-image {
+    grid-area: right;
   }
 
   .warm-nights .banner__headergroup {
@@ -220,7 +231,7 @@ body {
     background-color: white;
     color: var(--clr-nectarine-500);
     font-size: 4.5vh;
-    padding-block: 0 0.5vh;
+    padding-block: 1vh 0.5vh;
   }
 
   .warm-nights .banner__head span {
