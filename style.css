@@ -141,7 +141,7 @@ body {
   padding-block: 0.75rem 1.5rem;
   font-weight: var(--fw-med);
   letter-spacing: 2px;
-  font-size: 3vh;
+  font-size: calc(1rem + 1vw);
 }
 
 .warm-nights .banner__head span {
@@ -166,7 +166,7 @@ body {
 .banner__cta {
   color: var(--clr-neutral-100);
   background-color: var(--clr-wn-cta-900);
-  padding: 2vh;
+  padding: 2vh 2vw;
   display: inline-block;
   width: 90%;
   font-family: var(--ff-btn);
@@ -223,20 +223,19 @@ body {
   }
 
   .banner__cta {
-    padding: 5vh;
-    font-size: 4vh;
-    top: 4.5vh;
+    padding: 5vh 5vw;
+    font-size: 4vw;
   }
 
   .banner__formats {
-    font-size: 5vh;
+    font-size: 5vw;
   }
 
   .warm-nights .banner__top-tail {
     background-color: white;
     color: var(--clr-nectarine-500);
-    font-size: 4.5vh;
-    padding-block: 1vh 0.5vh;
+    font-size: 4.5vw;
+    padding-block: 1vh 0.5vw;
   }
 
   .warm-nights .banner__head span {
@@ -250,14 +249,14 @@ body {
   }
 
   .warm-nights .banner__foot {
-    font-size: 4.25vh;
-    padding-block: 1vh 0.5vh;
+    font-size: 4.25vw;
+    padding-block: 1vh 0.5vw;
   }
 }
 
 @media screen and (min-width: 568px) and (orientation: portrait) {
   .warm-nights .banner__top-tail {
-    font-size: 1.75vh;
+    font-size: 1.75vw;
   }
 
   .warm-nights .banner__headergroup {
@@ -265,27 +264,26 @@ body {
   }
 
   .banner__cta {
-    padding: 1.75vh;
-    font-size: 1.75vh;
-    top: 1.25vh;
+    padding: 1.75vw;
+    font-size: 1.75vw;
   }
 
   .banner__formats {
-    font-size: 2.25vh;
+    font-size: 2.25vw;
     position: relative;
     margin-top: -30px;
     margin-left: 40%;
   }
 
   .warm-nights .banner__foot {
-    padding-block: 1.25vh 3vh;
+    padding-block: 1.25vh 3vw;
   }
 }
 
 /* iPAD LANDSCAPE */
 @media screen and (min-width: 1023px) {
   .warm-nights .banner__top-tail {
-    font-size: 2.5vh;
+    font-size: 2.5vw;
     letter-spacing: 3px;
   }
 
@@ -294,13 +292,12 @@ body {
   }
 
   .banner__cta {
-    padding: 3vh;
-    font-size: 3vh;
-    top: 1.75vh;
+    padding: 3vh 3vw;
+    font-size: 3vw;
   }
 
   .warm-nights .banner__foot {
-    padding-block: 2.25vh 3vh;
-    font-size: 3vh;
+    padding-block: 2.25vh 3vw;
+    font-size: 3vw;
   }
 }
