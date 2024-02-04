@@ -137,6 +137,10 @@ body {
   font-size: 3vh;
 }
 
+.warm-nights .banner__head span {
+  display: block;
+}
+
 .warm-nights .banner__headergroup {
   --logotype-width: 100vw;
   height: calc(var(--logotype-width) / 2.5);
@@ -184,14 +188,11 @@ body {
   position: relative;
 }
 
+/* TWO COLUMN */
 @media screen and (min-width: 568px) {
-  /* body {
-    margin-right: 0;
-  } */
-
   .banner {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
   }
 
   .warm-nights .banner__text {
@@ -199,9 +200,10 @@ body {
   }
 
   .warm-nights .banner__headergroup {
-    height: calc(var(--logotype-width) / 5.75);
-    background-size: 90%;
-    background-position-x: 0.75vw;
+    height: calc(var(--logotype-width) / 5);
+    background: url(images/warm-nights-logotype.webp) no-repeat 100% 50%;
+    background-size: 75%;
+    background-position: 33% 50%;
   }
 
   .banner__cta {
@@ -216,10 +218,13 @@ body {
 
   .warm-nights .banner__top-tail {
     background-color: white;
-
     color: var(--clr-nectarine-500);
     font-size: 4.5vh;
     padding-block: 0 0.5vh;
+  }
+
+  .warm-nights .banner__head span {
+    display: inline;
   }
 
   .warm-nights .banner__head::after {
@@ -241,26 +246,27 @@ body {
 
   .warm-nights .banner__headergroup {
     height: calc(var(--logotype-width) / 5);
-    background-size: 86%;
-    background-position-x: 0.75vw;
   }
 
   .banner__cta {
     padding: 1.75vh;
     font-size: 1.75vh;
-    top: 1.75vh;
+    top: 1.25vh;
   }
 
   .banner__formats {
     font-size: 2.25vh;
+    position: relative;
+    margin-top: -30px;
+    margin-left: 40%;
   }
 
   .warm-nights .banner__foot {
-    padding-block: 2.25vh 3vh;
-    font-size: 2vh;
+    padding-block: 1.25vh 3vh;
   }
 }
 
+/* iPAD LANDSCAPE */
 @media screen and (min-width: 1023px) {
   .warm-nights .banner__top-tail {
     font-size: 2.5vh;
@@ -269,8 +275,6 @@ body {
 
   .warm-nights .banner__headergroup {
     height: calc(var(--logotype-width) / 4.5);
-    background-size: 96%;
-    background-position-x: -3px;
   }
 
   .banner__cta {
