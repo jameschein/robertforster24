@@ -208,3 +208,24 @@ body {
     font-size: 4.25vh;
   }
 }
+
+@media screen and (min-width: 767px) and (orientation: portrait) {
+  .warm-nights .banner__top-tail {
+    font-size: 2vh;
+  }
+
+  .banner__cta {
+    padding: 2vh;
+    font-size: 2vh;
+    top: 1.75vh;
+  }
+
+  .banner__formats {
+    font-size: 2.5vh;
+  }
+
+  .warm-nights .banner__foot {
+    padding-block: 2vh 4vh;
+    font-size: 2vh;
+  }
+}
