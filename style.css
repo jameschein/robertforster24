@@ -200,10 +200,11 @@ body {
   }
 
   .warm-nights .banner__top-tail {
-    font-size: small;
+    font-size: 4.5vh;
   }
 
   .warm-nights .banner__foot {
     padding-block: 0.75rem 1.5em;
+    font-size: 4vh;
   }
 }
