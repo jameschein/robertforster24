@@ -185,6 +185,7 @@ body {
   font-size: 6vw;
   letter-spacing: 2px;
   padding: 0.25rem 2rem;
+  font-weight: var(--fw-med);
 }
 
 .btn-parent {
