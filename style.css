@@ -185,9 +185,17 @@ body {
 }
 
 @media screen and (min-width: 568px) {
+  /* body {
+    margin-right: 0;
+  } */
+
   .banner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 45% 55%;
+  }
+
+  .warm-nights .banner__text {
+    border: none;
   }
 
   .warm-nights .banner__headergroup {
@@ -207,7 +215,17 @@ body {
   }
 
   .warm-nights .banner__top-tail {
+    background-color: white;
+
+    color: var(--clr-nectarine-500);
     font-size: 4.5vh;
+    padding-block: 0 0.5vh;
+  }
+
+  .warm-nights .banner__head::after {
+    content: "";
+    display: inline;
+    border: none;
   }
 
   .warm-nights .banner__foot {
@@ -222,7 +240,7 @@ body {
   }
 
   .warm-nights .banner__headergroup {
-    height: calc(var(--logotype-width) / 6);
+    height: calc(var(--logotype-width) / 5);
     background-size: 86%;
     background-position-x: 0.75vw;
   }
@@ -240,5 +258,29 @@ body {
   .warm-nights .banner__foot {
     padding-block: 2.25vh 3vh;
     font-size: 2vh;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .warm-nights .banner__top-tail {
+    font-size: 2.5vh;
+    letter-spacing: 3px;
+  }
+
+  .warm-nights .banner__headergroup {
+    height: calc(var(--logotype-width) / 4.5);
+    background-size: 96%;
+    background-position-x: -3px;
+  }
+
+  .banner__cta {
+    padding: 3vh;
+    font-size: 3vh;
+    top: 1.75vh;
+  }
+
+  .warm-nights .banner__foot {
+    padding-block: 2.25vh 3vh;
+    font-size: 3vh;
   }
 }
