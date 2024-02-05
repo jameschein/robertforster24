@@ -91,7 +91,6 @@ body {
 }
 
 .warm-nights.banner {
-  display: none;
 }
 
 .banner__text {
@@ -126,7 +125,6 @@ body {
 
 .banner__top-tail {
   letter-spacing: 3px;
-  font-size: calc(1rem + 0.75vw);
 }
 
 .banner__head {
@@ -139,7 +137,7 @@ body {
   line-height: 1;
   letter-spacing: 2px;
   padding-top: 6vw;
-  border-top:solid white 1vw;
+  border-top: solid white 1vw;
 }
 
 .banner__head span {
@@ -256,8 +254,8 @@ body {
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 6%,
-      rgba(255, 105, 5, 1) 6%,
+      rgba(255, 255, 255, 1) 12%,
+      rgba(255, 105, 5, 1) 12%,
       rgba(255, 105, 5, 1) 81%,
       rgba(255, 255, 255, 1) 81%,
       rgba(255, 255, 255, 1) 100%
@@ -280,7 +278,7 @@ body {
       rgba(255, 255, 255, 1) 100%
     );
     border: 0.125rem solid var(--clr-neutral-100);
-    gap:0;
+    gap: 0;
   }
 
   .banner__lp-image {
@@ -296,9 +294,7 @@ body {
 
   .banner__top-tail {
     background-color: white;
-    color: var(--clr-aubergine-800);
     padding-block: 0vw 1vw;
-    font-size: 2.5vw;
   }
 
   .beautiful-hearts .banner__top-tail {
@@ -306,15 +302,15 @@ body {
   }
 
   .banner__head {
-    color:var(--clr-neutral-100)
-    padding-block: 2vw 1vw;
+    color: var(--clr-nectarine-500);
+    padding-block: 0vw 2vw;
     background-color: transparent;
   }
 
   .beautiful-hearts .banner__head {
-    color:var(--clr-neutral-100);
-    padding: 3vw 0 0 ;
-    border-top:solid white 2vw;
+    color: var(--clr-neutral-100);
+    padding: 3vw 0 0;
+    border-top: solid white 2vw;
     background-color: transparent;
   }
 
@@ -327,7 +323,6 @@ body {
     display: inline;
     border: none;
   }
-
 
   .banner__headergroup {
     height: calc(var(--logotype-width) / 6);
@@ -370,13 +365,12 @@ body {
     padding-bottom: 0vw;
     position: static;
     margin-top: 0;
-    margin-left: 0; 
+    margin-left: 0;
   }
 
   .banner__foot {
     padding-bottom: 1vw;
     font-family: var(--ff-btn);
-    font-size: 2vw;
     letter-spacing: 1px;
   }
 
@@ -445,12 +439,12 @@ body {
     grid-template-columns: 57% 43%;
   }
 
-  .warm-nights .banner__top-tail {
+  .banner__top-tail {
     font-size: calc(1rem + 0.5vw);
     letter-spacing: 3px;
   }
 
-  .warm-nights .banner__headergroup {
+  .banner__headergroup {
     height: calc(var(--logotype-width) / 5);
     background-size: 84%;
   }
@@ -461,13 +455,9 @@ body {
     width: 72%;
   }
 
-  .warm-nights .banner__foot {
-    font-size: calc(1rem + 0.75vw);
-  }
-
-  .warm-nights .banner__foot::after,
-  .warm-nights .banner__foot::before {
-    width: 50px;
+  .banner__foot::after,
+  .banner__foot::before {
+    width: 20px;
     height: 10px;
   }
 
