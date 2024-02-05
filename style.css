@@ -117,7 +117,7 @@ body {
     rgba(255, 255, 255, 1) 85%,
     rgba(255, 255, 255, 1) 100%
   );
-  border-inline: 0.33rem solid var(--clr-neutral-100);
+  border-inline: 2rem solid var(--clr-neutral-100);
   display: grid;
   gap: 1rem;
   position: relative;
@@ -151,6 +151,12 @@ body {
   margin: auto;
 }
 
+.beautiful-hearts .banner__head::after {
+  content: "";
+  display: inline;
+  border: none;
+}
+
 .banner__headergroup {
   --logotype-width: 100vw;
   height: calc(var(--logotype-width) / 2.5);
@@ -159,9 +165,10 @@ body {
 }
 
 .beautiful-hearts .banner__headergroup {
-  background: url(images/beautiful-hearts-logotype-mobile.webp) no-repeat 50%;
-  background-size: 105%;
-  height: calc(var(--logotype-width) / 2.5);
+  background: url(images/beautiful-hearts-logotype-mobile.webp) no-repeat 45%
+    50%;
+  background-size: 117%;
+  height: calc(var(--logotype-width) / 2.25);
 }
 
 .banner__headergroup span {
@@ -279,7 +286,8 @@ body {
     padding-block: 0vw 1vw;
     font-size: 2.5vw;
   }
-  .banner__top-tail {
+
+  .beautiful-hearts .banner__top-tail {
     padding-top: 0vw;
   }
 
