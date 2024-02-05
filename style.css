@@ -225,7 +225,7 @@ body {
     background-color: white;
     color: var(--clr-nectarine-500);
     padding-block: 1.75vw;
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.75rem + 0.75vw);
   }
 
   .warm-nights .banner__headergroup {
@@ -238,12 +238,12 @@ body {
 
   .banner__cta {
     padding: 2vw;
-    font-size: calc(0.75rem + 0.125vw);
+    font-size: calc(0.75rem + 0.75vw);
     width: 72%;
   }
 
   .banner__formats {
-    font-size: calc(0.75rem + 0.25vw);
+    font-size: calc(0.75rem + 0.75vw);
     position: relative;
     margin-top: -20px;
     margin-left: 40%;
