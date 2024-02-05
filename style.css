@@ -385,11 +385,7 @@ body {
 
   .beautiful-hearts .banner__foot::after,
   .beautiful-hearts .banner__foot::before {
-    content: "";
     border-bottom: solid 1px var(--clr-aubergine-800);
-    width: 20px;
-    margin-bottom: 0.25em;
-    display: inline-block;
   }
 }
 
@@ -457,7 +453,7 @@ body {
 
   .banner__foot::after,
   .banner__foot::before {
-    width: 50px;
+    width: 30px;
     height: 10px;
   }
 
