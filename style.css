@@ -237,7 +237,7 @@ body {
   }
 
   .banner__formats {
-    font-size: calc(0.75rem + 0.75vw);
+    font-size: calc(0.75rem + 1vw);
     position: relative;
     margin-top: -20px;
     margin-left: 40%;
