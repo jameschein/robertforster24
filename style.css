@@ -4,6 +4,7 @@
   --clr-aubergine-800: hsl(0, 97%, 14%);
   --clr-wn-cta-900: hsl(273, 38%, 27%);
   --clr-wn-cta-700: hsl(254, 46%, 46%);
+  --clr-bh-cta-700: hsl(0, 28%, 46%);
   --clr-neutral-100: hsl(0, 0%, 100%);
 
   --ff-base: "futura-pt-condensed", sans-serif;
@@ -84,12 +85,16 @@ body {
   max-height: 100vh;
 }
 
-.warm-nights.banner {
+.banner {
   width: 100%;
   color: var(--clr-neutral-100);
 }
 
-.warm-nights .banner__text {
+.warm-nights.banner {
+  display: none;
+}
+
+.banner__text {
   background: linear-gradient(
     180deg,
     var(--clr-nectarine-500) 0%,
@@ -104,22 +109,37 @@ body {
   align-items: center;
 }
 
-.warm-nights .banner__top-tail {
+.beautiful-hearts .banner__text {
+  background: linear-gradient(
+    180deg,
+    var(--clr-aubergine-800) 0%,
+    var(--clr-aubergine-800) 85%,
+    rgba(255, 255, 255, 1) 85%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-inline: 0.33rem solid var(--clr-neutral-100);
+  display: grid;
+  gap: 1rem;
+  position: relative;
+  align-items: center;
+}
+
+.banner__top-tail {
   letter-spacing: 3px;
   font-size: calc(1rem + 0.75vw);
 }
 
-.warm-nights .banner__head {
+.banner__head {
   line-height: 1.125;
   letter-spacing: 2px;
   padding-top: 2vw;
 }
 
-.warm-nights .banner__head span {
+.banner__head span {
   display: block;
 }
 
-.warm-nights .banner__head::after {
+.banner__head::after {
   content: "";
   border-bottom: solid white 2px;
   height: 20px;
@@ -131,11 +151,17 @@ body {
   margin: auto;
 }
 
-.warm-nights .banner__headergroup {
+.banner__headergroup {
   --logotype-width: 100vw;
   height: calc(var(--logotype-width) / 2.5);
   background: url(images/warm-nights-logotype.webp) no-repeat -15px 50%;
   background-size: 100%;
+}
+
+.beautiful-hearts .banner__headergroup {
+  background: url(images/beautiful-hearts-logotype-mobile.webp) no-repeat 50%;
+  background-size: 105%;
+  height: calc(var(--logotype-width) / 2.5);
 }
 
 .banner__headergroup span {
@@ -165,16 +191,31 @@ body {
   transition: background-color 500ms;
 }
 
+.beautiful-hearts .banner__cta {
+  color: var(--clr-aubergine-800);
+  background-color: var(--clr-neutral-100);
+  border: solid 3px var(--clr-aubergine-800);
+}
+
 .banner__cta:is(:hover, :focus) {
   background-color: var(--clr-wn-cta-700);
   transition: background-color 500ms;
 }
 
-.warm-nights .banner__foot {
+.beautiful-hearts .banner__cta:is(:hover, :focus) {
+  background-color: var(--clr-bh-cta-700);
+  transition: background-color 500ms;
+}
+
+.banner__foot {
   background-color: var(--clr-neutral-100);
   color: var(--clr-nectarine-500);
   line-height: 1;
   letter-spacing: 2px;
+}
+
+.beautiful-hearts .banner__foot {
+  color: var(--clr-aubergine-800);
 }
 
 /* TWO COLUMN */
@@ -190,7 +231,7 @@ body {
     gap: 0;
   }
 
-  .warm-nights .banner__text {
+  .banner__text {
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
@@ -205,7 +246,19 @@ body {
     gap: 0;
   }
 
-  .warm-nights .banner__text {
+  .beautiful-hearts .banner__text {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 6%,
+      var(--clr-aubergine-800) 6%,
+      var(--clr-aubergine-800) 81%,
+      rgba(255, 255, 255, 1) 81%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  .banner__text {
     border: none;
   }
 
@@ -220,17 +273,17 @@ body {
     /* transform: perspective(100px) rotateY(-1deg);*/
   }
 
-  .warm-nights .banner__top-tail {
+  .banner__top-tail {
     background-color: white;
-    color: var(--clr-nectarine-500);
+    color: var(--clr-aubergine-800);
     padding-block: 0vw 1vw;
     font-size: 2.5vw;
   }
-  .warm-nights .banner__top-tail {
+  .banner__top-tail {
     padding-top: 0vw;
   }
 
-  .warm-nights .banner__headergroup {
+  .banner__headergroup {
     height: calc(var(--logotype-width) / 6);
     background: url(images/warm-nights-logotype.webp) no-repeat 100% 50%;
     background-size: 75%;
@@ -238,10 +291,23 @@ body {
     margin-top: 1vw;
   }
 
+  .beautiful-hearts .banner__headergroup {
+    height: calc(var(--logotype-width) / 9);
+    background: url(images/beautiful-heart-logotype.webp) no-repeat 50%;
+    background-size: 105%;
+  }
+
   .banner__cta {
     padding: 2vw;
     font-size: calc(0.75rem + 0.75vw);
     width: 72%;
+  }
+
+  .beautiful-hearts .banner__cta {
+    padding: 2vw;
+    font-size: calc(0.75rem + 0.75vw);
+    width: 72%;
+    border-width: 2px;
   }
 
   .banner__formats {
@@ -252,24 +318,46 @@ body {
     padding-bottom: 1.5vw;
   }
 
-  .warm-nights .banner__head span {
+  .beautiful-hearts .banner__formats {
+    font-size: calc(0.75rem + 0.75vw);
+    padding-bottom: 1.5vw;
+    position: static;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0vw;
+  }
+
+  .banner__head span {
     display: inline;
   }
 
-  .warm-nights .banner__head::after {
+  .banner__head::after {
     content: "";
     display: inline;
     border: none;
   }
 
-  .warm-nights .banner__foot {
+  .banner__head {
+    padding-block: 2vw 1vw;
+  }
+
+  .banner__foot {
     padding-bottom: 1vw;
   }
 
-  .warm-nights .banner__foot::after,
-  .warm-nights .banner__foot::before {
+  .banner__foot::after,
+  .banner__foot::before {
     content: "";
     border-bottom: solid 1px var(--clr-nectarine-500);
+    width: 20px;
+    margin-bottom: 0.25em;
+    display: inline-block;
+  }
+
+  .beautiful-hearts .banner__foot::after,
+  .beautiful-hearts .banner__foot::before {
+    content: "";
+    border-bottom: solid 1px var(--clr-aubergine-800);
     width: 20px;
     margin-bottom: 0.25em;
     display: inline-block;
