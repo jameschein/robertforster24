@@ -105,10 +105,10 @@ body {
 }
 
 .warm-nights .banner__top-tail {
-  --content-padding: 0.75rem;
+  /*--content-padding: 0.25rem;*/
   letter-spacing: 3px;
   font-size: calc(1rem + 0.5vw);
-  padding: var(--content-padding);
+  /* padding: var(--content-padding);*/
 }
 
 .warm-nights .banner__head {
