@@ -106,7 +106,7 @@ body {
 
 .warm-nights .banner__top-tail {
   letter-spacing: 3px;
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(1rem + 0.75vw);
 }
 
 .warm-nights .banner__head {
