@@ -442,7 +442,7 @@ body {
   }
 
   .banner__cta {
-    padding: 2vh 2vw;
+    padding: 2vw 2vw;
     font-size: calc(1rem + 1vw);
     width: 72%;
   }
@@ -463,10 +463,14 @@ body {
   }
 
   .banner__formats {
-    font-size: calc(1rem + 1vw);
+    font-size: calc(1.25rem + 1.25vw);
     position: relative;
     margin-top: -40px;
     margin-left: 40%;
     padding-bottom: 1vw;
+  }
+
+  .beautiful-hearts .banner__formats {
+    font-size: calc(1.25rem + 1.25vw);
   }
 }
