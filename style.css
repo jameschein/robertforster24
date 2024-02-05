@@ -213,7 +213,7 @@ body {
     background-color: transparent;
     grid-area: right;
     position: relative;
-    left: -0.5rem;
+    left: -0.33rem;
   }
 
   .banner__lp-image img {
@@ -318,7 +318,7 @@ body {
     overflow: hidden;
   }
   .banner__lp-image {
-    left: -0.66rem;
+    left: -0.75rem;
   }
 
   .banner {
