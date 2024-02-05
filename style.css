@@ -333,8 +333,8 @@ body {
   }
 
   .beautiful-hearts .banner__headergroup {
-    height: calc(var(--logotype-width) / 9);
-    background: url(images/beautiful-heart-logotype.webp) no-repeat 50%;
+    height: calc(var(--logotype-width) / 8);
+    background: url(images/beautiful-heart-logotype.png) no-repeat 50% 0%;
     background-size: 105%;
   }
 
@@ -428,15 +428,13 @@ body {
   .banner {
     overflow: hidden;
   }
-  .banner__lp-image {
-  }
 
   .banner {
     grid-template-columns: 57% 43%;
   }
 
   .banner__top-tail {
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(1rem + 0.25vw);
     letter-spacing: 3px;
   }
 
@@ -454,7 +452,6 @@ body {
   .banner__foot::after,
   .banner__foot::before {
     width: 30px;
-    height: 10px;
   }
 
   .banner__formats {
