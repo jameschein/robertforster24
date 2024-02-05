@@ -1,7 +1,7 @@
 :root {
   --clr-nectarine-500: #ff6905;
   --clr-nectarine-700: hsl(24, 99%, 37%);
-  --clr-aubergine-800: hsl(0, 97%, 14%);
+  --clr-aubergine-800: hsl(0, 73%, 20%);
   --clr-wn-cta-900: hsl(273, 38%, 27%);
   --clr-wn-cta-700: hsl(254, 46%, 46%);
   --clr-bh-cta-700: hsl(0, 28%, 46%);
@@ -12,7 +12,7 @@
 
   --fw-bold: 700;
   --fw-med: 500;
-  --fw-normal: 400;
+  --fw-normal: 300;
 }
 
 /* JOSH COMEAU RESET - https://www.joshwcomeau.com/css/custom-css-reset/
@@ -135,6 +135,13 @@ body {
   padding-top: 2vw;
 }
 
+.beautiful-hearts .banner__head {
+  line-height: 1;
+  letter-spacing: 2px;
+  padding-top: 6vw;
+  border-top:solid white 1vw;
+}
+
 .banner__head span {
   display: block;
 }
@@ -185,6 +192,13 @@ body {
   padding: 0.25rem 2rem;
 }
 
+.beautiful-hearts .banner__formats {
+  font-size: 7vw;
+  letter-spacing: 2px;
+  padding: 0.25rem 2rem;
+  font-weight: var(--fw-normal);
+}
+
 .banner__cta {
   color: var(--clr-neutral-100);
   background-color: var(--clr-wn-cta-900);
@@ -218,7 +232,7 @@ body {
   background-color: var(--clr-neutral-100);
   color: var(--clr-nectarine-500);
   line-height: 1;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .beautiful-hearts .banner__foot {
@@ -254,15 +268,15 @@ body {
   }
 
   .beautiful-hearts .banner__text {
+    background-color: var(--clr-aubergine-800);
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 6%,
       var(--clr-aubergine-800) 6%,
       var(--clr-aubergine-800) 81%,
       rgba(255, 255, 255, 1) 81%,
       rgba(255, 255, 255, 1) 100%
     );
+    border: 0.125rem solid var(--clr-neutral-100);
   }
 
   .banner__text {
@@ -346,7 +360,9 @@ body {
   }
 
   .banner__head {
+    color:var(--clr-neutral-100)
     padding-block: 2vw 1vw;
+    background-color: transparent;
   }
 
   .banner__foot {
