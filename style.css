@@ -372,6 +372,7 @@ body {
     padding-bottom: 1vw;
     font-family: var(--ff-btn);
     letter-spacing: 1px;
+    font-size: 2vw;
   }
 
   .banner__foot::after,
