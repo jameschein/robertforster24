@@ -213,7 +213,7 @@ body {
     background-color: transparent;
     grid-area: right;
     position: relative;
-    left: -0.75rem;
+    left: -0.5rem;
   }
 
   .banner__lp-image img {
