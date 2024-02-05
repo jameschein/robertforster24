@@ -93,13 +93,13 @@ body {
   background: linear-gradient(
     180deg,
     var(--clr-nectarine-500) 0%,
-    var(--clr-nectarine-500) 78%,
-    rgba(255, 255, 255, 1) 78%,
+    var(--clr-nectarine-500) 85%,
+    rgba(255, 255, 255, 1) 85%,
     rgba(255, 255, 255, 1) 100%
   );
   border-inline: 0.33rem solid var(--clr-neutral-100);
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
   position: relative;
   align-items: center;
 }
@@ -112,6 +112,7 @@ body {
 .warm-nights .banner__head {
   line-height: 1.125;
   letter-spacing: 2px;
+  padding-top: 2vw;
 }
 
 .warm-nights .banner__head span {
@@ -220,6 +221,9 @@ body {
     color: var(--clr-nectarine-500);
     padding-block: 0vw 1vw;
     font-size: 2.5vw;
+  }
+  .warm-nights .banner__top-tail {
+    padding-top: 0vw;
   }
 
   .warm-nights .banner__headergroup {
