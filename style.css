@@ -273,8 +273,8 @@ body {
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 3%,
-      var(--clr-aubergine-800) 3%,
+      rgba(255, 255, 255, 1) 4%,
+      var(--clr-aubergine-800) 4%,
       var(--clr-aubergine-800) 81%,
       rgba(255, 255, 255, 1) 81%,
       rgba(255, 255, 255, 1) 100%
