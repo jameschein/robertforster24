@@ -75,7 +75,7 @@ h6 {
 body {
   margin: 0.75rem;
   font-family: "futura-pt-condensed", sans-serif;
-  font-weight: 400;
+  font-weight: var(--fw-med);
   font-style: normal;
   font-size: 0.875em;
   text-transform: uppercase;
@@ -112,7 +112,6 @@ body {
 }
 
 .warm-nights .banner__head {
-  font-weight: var(--fw-med);
   line-height: 1.125;
   letter-spacing: 2px;
 }
@@ -129,7 +128,6 @@ body {
   display: block;
   justify-content: center;
   padding-top: 0.5rem;
-  font-weight: var(--fw-med);
   line-height: 1.125;
   margin: auto;
 }
@@ -153,7 +151,6 @@ body {
   font-size: 6vw;
   letter-spacing: 2px;
   padding: 0.25rem 2rem;
-  font-weight: var(--fw-med);
 }
 
 .banner__cta {
@@ -179,7 +176,6 @@ body {
   color: var(--clr-nectarine-500);
   line-height: 1;
   padding-block: 0.75rem 1.5rem;
-  font-weight: var(--fw-med);
   letter-spacing: 2px;
 }
 
