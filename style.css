@@ -396,7 +396,7 @@ body {
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 1) 0%,
-      var(--clr-nectarine-500) 3%,
+      rgba(255, 255, 255, 1) 3%,
       var(--clr-nectarine-500) 3%,
       var(--clr-nectarine-500) 75%,
       rgba(255, 255, 255, 1) 75%,
