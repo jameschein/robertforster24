@@ -213,10 +213,12 @@ body {
     background-color: transparent;
     grid-area: right;
     position: relative;
-    left: -0.5rem;
+    left: -1rem;
   }
 
   .banner__lp-image img {
+    display: block;
+    margin-left: 1vw;
     transform: perspective(100px) rotateY(-1deg);
   }
 
