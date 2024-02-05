@@ -335,7 +335,7 @@ body {
 
   .beautiful-hearts .banner__headergroup {
     height: calc(var(--logotype-width) / 8);
-    background: url(images/beautiful-heart-logotype.png) no-repeat 50% 0%;
+    background: url(images/beautiful-heart-logotype.webp) no-repeat 50% 0%;
     background-size: 105%;
   }
 
