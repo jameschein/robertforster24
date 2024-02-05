@@ -105,10 +105,8 @@ body {
 }
 
 .warm-nights .banner__top-tail {
-  /*--content-padding: 0.25rem;*/
   letter-spacing: 3px;
   font-size: calc(1rem + 0.5vw);
-  /* padding: var(--content-padding);*/
 }
 
 .warm-nights .banner__head {
@@ -199,6 +197,7 @@ body {
     );
     grid-area: left;
     border-right: none;
+    gap: 0;
   }
 
   .warm-nights .banner__text {
@@ -219,7 +218,7 @@ body {
   .warm-nights .banner__top-tail {
     background-color: white;
     color: var(--clr-nectarine-500);
-    padding-block: 1.75vw;
+    padding-block: 0vw 1vw;
     font-size: 2.5vw;
   }
 
@@ -253,6 +252,10 @@ body {
     content: "";
     display: inline;
     border: none;
+  }
+
+  .warm-nights .banner__foot {
+    padding-bottom: 1vw;
   }
 
   .warm-nights .banner__foot::after,
@@ -328,7 +331,6 @@ body {
   }
 
   .warm-nights .banner__foot {
-    padding-block: 1vh 3vw;
     font-size: calc(1rem + 0.75vw);
   }
 
