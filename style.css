@@ -217,7 +217,7 @@ body {
 
   .banner__lp-image img {
     display: block;
-    transform: perspective(100px) rotateY(-1deg);
+    /* transform: perspective(100px) rotateY(-1deg);*/
   }
 
   .warm-nights .banner__top-tail {
