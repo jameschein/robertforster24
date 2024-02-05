@@ -179,6 +179,10 @@ body {
 
 /* TWO COLUMN */
 @media screen and (min-width: 568px) {
+  body {
+    margin: 1.125rem;
+  }
+
   .banner {
     display: grid;
     grid-template-columns: 55% 45%;
