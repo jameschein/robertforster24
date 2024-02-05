@@ -428,10 +428,6 @@ body {
 /* iPAD LANDSCAPE */
 @media screen and (min-width: 1023px) {
   .banner {
-    overflow: hidden;
-  }
-
-  .banner {
     grid-template-columns: 57% 43%;
   }
 
@@ -449,6 +445,10 @@ body {
     padding: 2vh 2vw;
     font-size: calc(1rem + 1vw);
     width: 72%;
+  }
+
+  .banner__head {
+    font-size: 2.5vw;
   }
 
   .banner__foot::after,
