@@ -452,6 +452,12 @@ body {
   .banner__foot::after,
   .banner__foot::before {
     width: 30px;
+    border-bottom: 2px solid var(--clr-nectarine-500);
+  }
+
+  .beautiful-hearts .banner__foot::after,
+  .beautiful-hearts .banner__foot::before {
+    border-bottom: 2px solid var(--clr-aubergine-800);
   }
 
   .banner__formats {
